@@ -1,11 +1,86 @@
-# Pizza_sales_SQL_project
-Analysing Pizza Sales data with SQL
-Introduction: This project aims to analyze pizza sales data using SQL. The analysis helps in understanding sales patterns, customer preferences, and operational performance.
+# 🍕 Pizza Sales Analysis using SQL
 
-Dataset: The dataset includes various tables with information about: Pizzas: types of pizzas. Orders: Information about orders placed by customers. Pizza_types: Details of different types of pizzas. Order Details: Specifics of each order, including pizza type and quantity. 
+## 📌 Introduction
 
-The SQL queries used in this project are categorized as follows: Data Cleaning: Scripts for cleaning and preparing the data. Exploratory Analysis: Queries to understand the data distribution and patterns. Sales Analysis: Queries focusing on sales performance, trends, and insights. Customer Analysis: Queries to analyze customer behavior and preferences. Operational Analysis: Queries to evaluate operational efficiency.
+This project focuses on analyzing pizza sales data using **SQL** to uncover insights into sales performance, customer preferences, and operational efficiency. The goal is to support data-driven decisions to boost revenue and streamline operations.
 
-Schema Design The schema used in this project was designed in Power BI, providing a clear and visual representation of the data structure.
+---
 
-To perform the analysis: Open your Mysql workbench. Load the dataset. Run the SQL scripts in the specified order.
+## 🧾 Dataset Overview
+
+The dataset includes several relational tables with the following key components:
+
+- **Pizzas** – Information on pizza sizes, names, and prices  
+- **Pizza Types** – Descriptions, categories, and ingredients of each pizza  
+- **Orders** – Records of orders placed by customers  
+- **Order Details** – Line items for each order including pizza type and quantity  
+
+---
+
+## 🧠 Process & Methodology
+
+The SQL analysis is structured into key categories:
+
+### 🔧 Data Cleaning
+- Removed duplicates and nulls
+- Standardized date/time formats and pizza naming inconsistencies
+
+### 📊 Exploratory Analysis
+- Identified data distributions and basic trends  
+- Analyzed order frequency and pizza availability  
+
+### 💰 Sales Analysis
+- Total revenue by pizza type, size, and time period  
+- Top-selling and highest-revenue pizzas  
+- Seasonal and weekly sales trends  
+
+### 👥 Customer Analysis
+- Ordering frequency by customer  
+- Popular combinations and ordering habits  
+- Time-based ordering behavior  
+
+### ⚙️ Operational Analysis
+- Order volume by day/hour  
+- Kitchen workload patterns  
+- Inventory and supply chain insights  
+
+---
+
+## 🗂️ Schema Design
+
+The data schema was designed and visualized using **Power BI**, enabling better understanding of table relationships and query logic.
+
+[Orders]──< [Order Details] >──[Pizzas]──< [Pizza Types]
+
+
+---
+
+## 📈 Key Insights & Results
+
+1. **Most Ordered & Highest Revenue Pizza:** Identified top-performing pizza types by volume and revenue  
+2. **Revenue Trends:** Analyzed daily and monthly revenue patterns to uncover peak times  
+3. **Customer Preferences:** Adults prefer large pizzas; weekends show higher sales volume  
+4. **Operational Efficiency:** Bottlenecks observed during lunch and weekend hours — opportunity to optimize staff scheduling  
+
+---
+
+## 🚀 Conclusion
+
+This analysis highlights customer trends, operational bottlenecks, and top-performing products. Insights from this project can be used to:
+- Optimize **menu offerings**  
+- Improve **inventory management**  
+- Adjust **staffing based on demand patterns**  
+- Drive **strategic marketing** to boost sales
+
+---
+
+## 🛠️ Tools Used
+
+- **SQL** (MySQL / PostgreSQL) – for all data queries and analysis  
+- **Power BI** – for schema design and visual exploration  
+- **Excel** – for minor data formatting and previewing results  
+---
+
+## 🙌 Acknowledgements
+
+Inspired by real-world business challenges in the food service industry. Dataset adapted from practice project materials.
